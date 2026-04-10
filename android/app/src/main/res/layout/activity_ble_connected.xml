@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+        <!-- Bluetooth 아이콘 -->
+        <ImageView
+            android:id="@+id/bluetooth_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/bluetooth_connected_48px" />
+
+        <!-- 상태 메시지 -->
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="디바이스의 시작 신호를 기다리는 중 ..."
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+
+</LinearLayout>

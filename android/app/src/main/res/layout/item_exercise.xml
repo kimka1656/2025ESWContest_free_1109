@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_exercise_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="운동 1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/btn_delete"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_drop_down_24px" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/delete_24px" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• 목표 세트: 3" />
+
+        <TextView
+            android:id="@+id/tv_reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• 1세트당 목표 횟수: 15" />
+
+        <TextView
+            android:id="@+id/tv_round_trip_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• 1회 왕복 시간: 20초" />
+
+        <TextView
+            android:id="@+id/tv_rest_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• 세트 간 쉬는 시간: 1분" />
+    </LinearLayout>
+
+</LinearLayout>
